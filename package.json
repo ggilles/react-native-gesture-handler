@@ -1,5 +1,5 @@
 {
-  "name": "@ggilles/react-native-gesture-handler",
+  "name": "@gg66/react-native-gesture-handler",
   "version": "2.13.2",
   "description": "Experimental implementation of a new declarative API for gesture handling in react-native",
   "scripts": {
