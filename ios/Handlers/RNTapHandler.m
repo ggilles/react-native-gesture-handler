@@ -70,9 +70,9 @@ static const NSTimeInterval defaultMaxDuration = 0.5;
 
 - (void)cancel
 {
-    if (_cancelScheduled == YES) {
-        self.enabled = NO;
-    }
+  if (_cancelScheduled == YES) {
+    self.enabled = NO;
+  }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

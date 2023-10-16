@@ -34,7 +34,7 @@
   __weak RNGestureHandler *_gestureHandler;
   NSUInteger _realMinimumNumberOfTouches;
   BOOL _hasCustomActivationCriteria;
-  BOOL _activateAfterLongPressScheduled
+  BOOL _activateAfterLongPressScheduled;
 }
 
 - (id)initWithGestureHandler:(RNGestureHandler *)gestureHandler
@@ -155,7 +155,7 @@
 {
   [self triggerAction];
   [_gestureHandler.pointerTracker reset];
-  _activateAfterLongPressScheduled = NO
+  _activateAfterLongPressScheduled = NO;
   [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(activateAfterLongPress) object:nil];
   self.enabled = YES;
   [super reset];
